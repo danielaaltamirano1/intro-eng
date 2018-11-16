@@ -1,0 +1,39 @@
+import random
+secret = random.randint(1,10)
+level=1
+lives=3
+losses=0
+print("LEVEL 1,3 LIVES")
+guess =  input("Guess a number between 1 and 10")
+if int(guess) == secret:
+  print("YOU WIN ALEC AS YOUR HUSBANDO, YOU LUCKY SON OF A NUGGET")
+  level+=1
+  print("LEVEL 2")
+else:
+  print("wHoOps YOU WOULD OF THOUGHT")
+  lives-=1
+
+if level == 2 and int(guess) == secret:
+  print("YOU GET MORE CHICKEN NUGGETS AND A LEVEL UP")
+  level+=2
+else:
+  print("a disappointment in humanity since james charles...wHoOpsiE")
+  lives-=1
+  
+if level == 3 and int(guess) == secret:
+  print("NO SKOOL AND MORE MEMES WITH NUGGETS")
+  level+=3
+else: 
+  print("You get Mark and Mark's NOT COOL")
+  lives-=1
+
+if level == 4 and int(guess) == secret:
+  print("You get to meet all of your husbandos and stans while achieving the phantom theives mask, o yis")
+if level == 5 and int(guess) == secret:
+  print("You get to acheive the ultimate level of dankness with Africa by Toto playing in the background while the Bee Movie begin. O YEZ. YOU WIN!!")
+else:
+  print("oh my god she ded. GAME OVER")
+  
+  
+  
+  
